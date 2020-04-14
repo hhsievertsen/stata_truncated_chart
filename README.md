@@ -7,7 +7,7 @@
 20200413: Uploaded proof of concept
 
 **The raw chart**
-![](fig1.png  =100x20)
+![](fig1.png){:height="50%" width="50%"}
 
 **Often suggested solution 1: use** *yscale*
 
