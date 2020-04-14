@@ -1,4 +1,5 @@
 sysuse auto,clear
+collapse (mean) price, by(weight) fast
 * actual case
 tw (line price weight ,sort) , title("Original: we want to truncate y axis ")
 graph export "fig1.png",replace
@@ -12,8 +13,7 @@ graph export "fig3.png",replace
 tw (line price weight if price<10000,sort ),title("using if price<10000'")
 graph export "fig4.png",replace
 * ad hoc solution
-* 1 collapse to have one observation per value on the x axis
-	collapse (mean) price, by(weight) fast
+* 1 sort by x axis
 	sort weight
 * 2 calculate gaps beween observations
 	gen difweight=weight[_n+1]-weight
