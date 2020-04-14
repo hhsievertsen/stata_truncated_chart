@@ -8,33 +8,13 @@
 
 **The raw chart**
 
-<img src="fig1.png" width="300">
-
-**Often suggested solution 1: use** *yscale*
-
- *  Challenge: only works for extending the scale, can never be smaller than the data range. 
-
-<img src="fig2.png" width="300">
-
-**Often suggested solution 2: use** *ylab*
-
- *  Challenge: only affects labels, not axis range.
- 
-
-<img src="fig3.png" width="300">
-
-**Often suggested solution 3: use** *if*
-
- *  Challenge: changes the relationship to show
- 
-
-<img src="fig4.png" width="300">
+<img src="fig1.png" width="400">
 
 
-**My solutioon**
+**My solution: truncating the y axis to y<10000**
 
 * Interpolate data points
 * See Stata do file for proof of concept.
 * Challenge: line gets a bit rugged...
 
-<img src="fig5.png" width="300">
+<img src="fig5.png" width="400">
