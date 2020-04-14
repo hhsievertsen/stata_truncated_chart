@@ -25,7 +25,8 @@ graph export "fig4.png",replace
 	bys weight: gen counter=_n
 	gen interpolate_price=price+difprice*((counter-1)/(difweight*1000))
 	gen interpolate_weight=weight+difweight*((counter-1)/(difweight*1000))
-* create chart using small dots
-tw (scatter interpolate_price interpolate_weight if interpolate_price<10000 , msize(vtiny) msymbol(.)) ///
+* create chart using interpolation approach
+	replace interpolate_price=. if interpolate_price>=10000
+tw (line interpolate_price interpolate_weight  , cmissing(n) ) ///
 	,title("Using 'manual approach'")
 	graph export "fig5.png",replace
