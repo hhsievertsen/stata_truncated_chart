@@ -7,7 +7,7 @@
 20200413: Uploaded proof of concept
 
 **The raw chart**
-![](fig1.png=250x)
+![](fig1.png =250x)
 
 **Often suggested solution 1: use** *yscale*
 
