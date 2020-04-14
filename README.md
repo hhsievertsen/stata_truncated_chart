@@ -35,5 +35,6 @@
 
 * Interpolate data points
 * See Stata do file for proof of concept.
+* Challenge: line gets a bit rugged...
 
 <img src="fig5.png" width="300">
